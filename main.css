@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --bg-primary-color: #E7E7E7;
+    --bg-secondary-color: #020202;
+    --text-primary-color: #FFFFFF;
+    --button-secondary-color: #0cb330;
+
+    
+    --large-font-size: 200px;
+    --medium-font-size: 30px;
+    --normal-font-size: 20px;
+}
+
+body {
+    background-size: 100%;
+    padding-top: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+form,
+thead {
+    background-color:#020202
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+header img {
+    margin-right: 70px;
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color:#FFFFFF
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+form input,
+form button {
+    padding: .10px;
+    font-size: 24px;
+    background-color:#009432;
+    color:#0e0d0d;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-bottom: 10px;
+}
+
+form input {
+    background-color:#FFFFFF;
+    border-bottom: 10px;
+}
+
+form button {
+    background-color:#009432;
+    color:#FFFFFF;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+form button:nth-last-child(1) {
+    background-color:#06690e;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    color:#FFFFFF;
+}
+
+tbody {
+    background-color:#FFFFFF;
+    color:#020202;
+    font-weight: bold;
+}
+
+table th {
+    border-bottom: 9px solid var(--text-secondary-color);
+    padding: 5px;
+    font-size: var(--medium-font-size);
+    font-weight: bold;
+}
+
+table td {
+    font-size: var(--normal-font-size);
+    text-align: center;
+    padding: 0px 0; 
+    border-bottom: 1px solid var(--border-primary-color);
+}
+
+table td img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #64cbdd;
+    color:#020202;
+}
